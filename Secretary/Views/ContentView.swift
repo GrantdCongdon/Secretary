@@ -7,15 +7,11 @@
 
 import SwiftUI
 
+/// Root view of the app.
+/// Session 3: Now shows the notebook browser.
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        NotebookBrowserView()
     }
 }
 

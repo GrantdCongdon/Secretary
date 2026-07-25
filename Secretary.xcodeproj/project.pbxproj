@@ -6,19 +6,79 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		731561593014987E00276548 /* SecretaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731561583014986900276548 /* SecretaryTests.swift */; };
+		73DE8F3330149C4C000CA1B6 /* NotebookBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7315615A3014994C00276548 /* NotebookBrowser.swift */; };
+		73DE8F3430149C52000CA1B6 /* NotebookBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7315615B3014996300276548 /* NotebookBrowserView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7315614B3014952000276548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73370D6E301476D800CC7A2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73370D75301476D800CC7A2A;
+			remoteInfo = Secretary;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		731561273014909200276548 /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
+		731561283014909200276548 /* ROADMAP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ROADMAP.md; sourceTree = "<group>"; };
+		731561473014952000276548 /* SecretaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		731561583014986900276548 /* SecretaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretaryTests.swift; sourceTree = "<group>"; };
+		7315615A3014994C00276548 /* NotebookBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookBrowser.swift; sourceTree = "<group>"; };
+		7315615B3014996300276548 /* NotebookBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookBrowserView.swift; sourceTree = "<group>"; };
 		73370D76301476D800CC7A2A /* Secretary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Secretary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DE8F3930149E70000CA1B6 /* SESSION_4_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SESSION_4_SUMMARY.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7315612230148C7000276548 /* Exceptions for "Secretary" folder in "Secretary" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Engine/.gitkeep,
+				Engine/NotebookEngineTests.swift,
+				INFO_PLIST_SETUP.md,
+				Info.plist,
+				Models/.gitkeep,
+				PROGRESS.md,
+				SESSION_5_CORRECTED.md,
+				SESSION_5_SUMMARY.md,
+				SESSION_5_ZOOM_TRANSITION.md,
+				SESSION_6_SUMMARY.md,
+			);
+			target = 73370D75301476D800CC7A2A /* Secretary */;
+		};
+		731561533014952700276548 /* Exceptions for "Secretary" folder in "SecretaryTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Engine/NotebookEngineTests.swift,
+			);
+			target = 731561463014952000276548 /* SecretaryTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		73370D78301476D800CC7A2A /* Secretary */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7315612230148C7000276548 /* Exceptions for "Secretary" folder in "Secretary" target */,
+				731561533014952700276548 /* Exceptions for "Secretary" folder in "SecretaryTests" target */,
+			);
 			path = Secretary;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		731561443014952000276548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73370D73301476D800CC7A2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,8 +92,14 @@
 		73370D6D301476D800CC7A2A = {
 			isa = PBXGroup;
 			children = (
+				731561273014909200276548 /* CLAUDE.md */,
+				731561283014909200276548 /* ROADMAP.md */,
 				73370D78301476D800CC7A2A /* Secretary */,
 				73370D77301476D800CC7A2A /* Products */,
+				731561583014986900276548 /* SecretaryTests.swift */,
+				7315615A3014994C00276548 /* NotebookBrowser.swift */,
+				7315615B3014996300276548 /* NotebookBrowserView.swift */,
+				73DE8F3930149E70000CA1B6 /* SESSION_4_SUMMARY.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				73370D76301476D800CC7A2A /* Secretary.app */,
+				731561473014952000276548 /* SecretaryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +115,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		731561463014952000276548 /* SecretaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7315614D3014952000276548 /* Build configuration list for PBXNativeTarget "SecretaryTests" */;
+			buildPhases = (
+				731561433014952000276548 /* Sources */,
+				731561443014952000276548 /* Frameworks */,
+				731561453014952000276548 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7315614C3014952000276548 /* PBXTargetDependency */,
+			);
+			name = SecretaryTests;
+			packageProductDependencies = (
+			);
+			productName = SecretaryTests;
+			productReference = 731561473014952000276548 /* SecretaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		73370D75301476D800CC7A2A /* Secretary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73370D81301476D900CC7A2A /* Build configuration list for PBXNativeTarget "Secretary" */;
@@ -80,6 +167,10 @@
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
+					731561463014952000276548 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 73370D75301476D800CC7A2A;
+					};
 					73370D75301476D800CC7A2A = {
 						CreatedOnToolsVersion = 26.6;
 					};
@@ -100,11 +191,19 @@
 			projectRoot = "";
 			targets = (
 				73370D75301476D800CC7A2A /* Secretary */,
+				731561463014952000276548 /* SecretaryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		731561453014952000276548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73370D74301476D800CC7A2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,16 +214,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		731561433014952000276548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731561593014987E00276548 /* SecretaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73370D72301476D800CC7A2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DE8F3430149C52000CA1B6 /* NotebookBrowserView.swift in Sources */,
+				73DE8F3330149C4C000CA1B6 /* NotebookBrowser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7315614C3014952000276548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73370D75301476D800CC7A2A /* Secretary */;
+			targetProxy = 7315614B3014952000276548 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7315614E3014952000276548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6BSLX4492;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personalApps.SecretaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secretary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Secretary";
+			};
+			name = Debug;
+		};
+		7315614F3014952000276548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6BSLX4492;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personalApps.SecretaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secretary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Secretary";
+			};
+			name = Release;
+		};
 		73370D7F301476D900CC7A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -256,6 +415,9 @@
 				DEVELOPMENT_TEAM = N6BSLX4492;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Secretary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +450,9 @@
 				DEVELOPMENT_TEAM = N6BSLX4492;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Secretary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +478,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7315614D3014952000276548 /* Build configuration list for PBXNativeTarget "SecretaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7315614E3014952000276548 /* Debug */,
+				7315614F3014952000276548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		73370D71301476D800CC7A2A /* Build configuration list for PBXProject "Secretary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -11,7 +11,7 @@ import SwiftUI
 struct SecretaryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NotebookBrowserView()
         }
     }
 }
